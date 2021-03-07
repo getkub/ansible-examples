@@ -2,6 +2,6 @@
   gather_facts: false
   tasks:
     - replace:
-        path: '/scratch/tmp/test12'
+        path: '/tmp/ansible_examples/test12'
         regexp: '0+$'
         replace: '1'

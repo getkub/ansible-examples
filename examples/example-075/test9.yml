@@ -9,7 +9,7 @@
         var: myfile_list
     - template:
         src: test9.j2
-        dest: /scratch/tmp/test
+        dest: /tmp/ansible_examples/test
 
 # Ansible Jinja template - read file line by line
 # https://stackoverflow.com/questions/58424981/ansible-jinja-template-read-file-line-by-line

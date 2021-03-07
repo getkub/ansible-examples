@@ -2,7 +2,7 @@
 
   vars:
 
-    zones_dir: /scratch/tmp/zones
+    zones_dir: /tmp/ansible_examples/zones
 
   tasks:
 

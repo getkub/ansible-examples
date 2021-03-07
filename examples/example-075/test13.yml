@@ -4,7 +4,7 @@
   tasks:
     - template:
         src: test13.j2
-        dest: /scratch/tmp/test13
+        dest: /tmp/ansible_examples/test13
 
 # Problem with variables and creating a file using rsyslog and ansible
 # https://stackoverflow.com/questions/58854601/problem-with-variables-and-creating-a-file-using-rsyslog-and-ansible

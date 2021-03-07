@@ -3,7 +3,7 @@
   gather_facts: false
   tasks:
     - unarchive:
-        src: /scratch/tmp/test.tar.gz
+        src: /tmp/ansible_examples/test.tar.gz
         dest: /scratch/restore
         remote_src: yes
 ...

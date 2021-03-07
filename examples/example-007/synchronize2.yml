@@ -4,7 +4,7 @@
   tasks:
     - synchronize:
         mode: pull
-        src: /scratch/tmp/ansible-test-file
+        src: /tmp/ansible_examples/ansible-test-file
         dest: /scratch/tmp
 
 # EOF

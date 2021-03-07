@@ -2,7 +2,7 @@
   gather_facts: false
   tasks:
     - lineinfile:
-        path: /scratch/tmp/login.defs
+        path: /tmp/ansible_examples/login.defs
         regex: '^PASS_MAX_DAYS(\s+)(\S*)$'
         line: 'PASS_MAX_DAYS\g<1>90'
         backrefs: true
@@ -22,7 +22,7 @@
 #    below
 # 
 #     - lineinfile:
-#         path: /scratch/tmp/login.defs
+#         path: /tmp/ansible_examples/login.defs
 #         regex: '^PASS_MAX_DAYS(\s+)(\S*)$'
 #         line: 'PASS_MAX_DAYS\g<1>90'
 #         backrefs: true

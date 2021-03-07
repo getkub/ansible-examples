@@ -3,6 +3,6 @@
   tasks:
     - template:
         src: test14-template.j2
-        dest: /scratch/tmp/hosts
+        dest: /tmp/ansible_examples/hosts
       run_once: true
       delegate_to: localhost

@@ -13,11 +13,11 @@
         var: string2|list
     - template:
         src: test1.j2
-        dest: /scratch/tmp/test1.txt
+        dest: /tmp/ansible_examples/test1.txt
 
 # Using regex_replace in Ansible
 # https://stackoverflow.com/questions/57061593/using-regex-replace-in-ansible/
 
-# > cat /scratch/tmp/test1.txt
+# > cat /tmp/ansible_examples/test1.txt
 # string1: D:\\Scr
 # string2: D:\Scr

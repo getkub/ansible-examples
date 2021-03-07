@@ -13,7 +13,7 @@
         msg: "{{ lookup('file', '/root/test') }}"
     - name: read the file
       debug:
-        msg: "{{ lookup('file', '/scratch/tmp/test') }}"
+        msg: "{{ lookup('file', '/tmp/ansible_examples/test') }}"
 
 # how to do privilege escalation on lookup(ini)
 # https://stackoverflow.com/questions/56358099/how-to-do-privilege-escalation-on-lookupini

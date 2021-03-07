@@ -5,4 +5,4 @@
   tasks:
     - template:
         src: play4-template.j2
-        dest: /scratch/tmp/hostsx
+        dest: /tmp/ansible_examples/hostsx

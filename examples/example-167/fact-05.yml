@@ -2,7 +2,7 @@
   gather_facts: false
 
   vars:
-    my_var: "{{ lookup('pipe', '/scratch/tmp/my_script') }}"
+    my_var: "{{ lookup('pipe', '/tmp/ansible_examples/my_script') }}"
 
   tasks:
     - debug:

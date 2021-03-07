@@ -4,7 +4,7 @@
     new_server_ip: 192.168.1.99
   tasks:
     - ini_file:
-        path: /scratch/tmp/hosts
+        path: /tmp/ansible_examples/hosts
         section: sample_word_test
         option: "{{ new_server_ip }}"
         allow_no_value: yes

@@ -5,11 +5,11 @@
     replace: '{{ "\1" + "{{" + "\2" + "}}" }}'
   tasks:
 #    - replace:
-#        path: "/scratch/tmp/test"
+#        path: "/tmp/ansible_examples/test"
 #        regexp: '^(.*)@@([a-zA-Z_ ]*)@@$'
 #        replace: '{{ "\1" + "{{" + "\2" + "}}" }}'
     - replace:
-        path: "/scratch/tmp/test"
+        path: "/tmp/ansible_examples/test"
         regexp: '^(.*)@@(.*)@@$'
         replace: '{{ "\1" + "{{" + "\2" + "}}" }}'
 

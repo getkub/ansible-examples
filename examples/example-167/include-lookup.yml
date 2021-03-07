@@ -1,6 +1,6 @@
 - name: 'Get data'
   set_fact:
-    my_var: "{{ lookup('pipe', '/scratch/tmp/my_script')|from_yaml }}"
+    my_var: "{{ lookup('pipe', '/tmp/ansible_examples/my_script')|from_yaml }}"
   when: my_continue
 - name: 'Set continue=false when data OK'
   set_fact:

@@ -7,4 +7,4 @@
         var: array
     - template:
         src: test10.j2
-        dest: /scratch/tmp/test
+        dest: /tmp/ansible_examples/test

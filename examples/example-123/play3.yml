@@ -6,7 +6,7 @@
   tasks:
     - name: Adding rsyslog script to redirect Mikrotik logs
       blockinfile:
-        path: /scratch/tmp/test
+        path: /tmp/ansible_examples/test
         block: |
          :fromhost-ip, isequal, '{{ logs_src_ip1 }}' /var/log/mikrotik.log
          & ~
@@ -23,7 +23,7 @@
 
 # - name: Adding rsyslog script to redirect Mikrotik logs
 #   blockinfile:
-#     path: /scratch/tmp/test
+#     path: /tmp/ansible_examples/test
 #     block: |
 #      :fromhost-ip, isequal, '{{ logs_src_ip1 }}' /var/log/mikrotik.log
 #      & ~

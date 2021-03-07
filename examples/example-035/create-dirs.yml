@@ -2,10 +2,10 @@
   gather_facts: no
   vars:
     dirs:
-      - /scratch/tmp/01
-      - /scratch/tmp/01/a/b/c
-      - /scratch/tmp/01/b/c/d
-      - /scratch/tmp/01/c/d/e
+      - /tmp/ansible_examples/01
+      - /tmp/ansible_examples/01/a/b/c
+      - /tmp/ansible_examples/01/b/c/d
+      - /tmp/ansible_examples/01/c/d/e
   tasks:
     - name: Create directories
       command: mkdir -p "{{ item }}"

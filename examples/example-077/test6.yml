@@ -2,7 +2,7 @@
 - hosts: localhost
   gather_facts: false
   vars:
-    path_to_template: /scratch/tmp/test
+    path_to_template: /tmp/ansible_examples/test
     string: "Hi I am @Something.great@ from a planet @planet.outside.earth@"
   tasks:
 

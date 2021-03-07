@@ -9,7 +9,7 @@
 
     - template:
         src: test6.j2
-        dest: /scratch/tmp/test
+        dest: /tmp/ansible_examples/test
 
 # Ansible variables template issue
 # https://superuser.com/questions/1474369/ansible-variables-template-issue/

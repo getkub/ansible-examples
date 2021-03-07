@@ -2,7 +2,7 @@
   gather_facts: false
   tasks:
     - find:
-        path: "/scratch/tmp/*/*/test1/"
+        path: "/tmp/ansible_examples/*/*/test1/"
       register: result
     - debug:
         var: result
@@ -14,5 +14,5 @@
 #    files: []
 #    matched: 0
 #  msg: |-
-#    /scratch/tmp/*/*/test1/ was skipped as it does not seem to be a
+#    /tmp/ansible_examples/*/*/test1/ was skipped as it does not seem to be a
 #    valid directory or it cannot be accessed

@@ -1,7 +1,7 @@
 - hosts: localhost
   gather_facts: false
   vars:
-    my_var: "{{ lookup('pipe', '/scratch/tmp/my_script')|from_yaml }}"
+    my_var: "{{ lookup('pipe', '/tmp/ansible_examples/my_script')|from_yaml }}"
   tasks:
     - debug:
         var: my_var

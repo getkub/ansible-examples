@@ -30,7 +30,7 @@
         msg: "{{ my_list|to_nice_yaml }}"
 
     - ini_file:
-        path: /scratch/tmp/config.ini
+        path: /tmp/ansible_examples/config.ini
         section: "{{ item.0.section }}"
         option: "{{ item.1.keys()|list|first }}"
         value: "{{ item.1.values()|list|first }}"

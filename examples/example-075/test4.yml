@@ -8,7 +8,7 @@
   tasks:
     - template:
         src: test4.j2
-        dest: /scratch/tmp/test
+        dest: /tmp/ansible_examples/test
 
 # strip quotes from a variable in Ansible
 # https://stackoverflow.com/questions/57102643/strip-quotes-from-a-variable-in-ansible/

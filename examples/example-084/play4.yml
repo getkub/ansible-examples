@@ -3,7 +3,7 @@
 
   vars:
     my_debug: yes
-    conf_path: /scratch/tmp/environment
+    conf_path: /tmp/ansible_examples/environment
     extra_path: /usr/pgsql-10/bin
 
   tasks:

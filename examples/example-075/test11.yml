@@ -5,7 +5,7 @@
   tasks:
     - template:
         src: test11.j2
-        dest: /scratch/tmp/test11
+        dest: /tmp/ansible_examples/test11
 
 # Copying array into template introduces extra 'u' per variable
 # https://stackoverflow.com/questions/58559803/copying-array-into-template-introduces-extra-u-per-variable

@@ -7,7 +7,7 @@
     - set_fact:
         InstallDir: '/usr/local'
     - name: 'Collect Output'
-      command: "sh -c 'ls -1 /scratch/tmp/*.db'"
+      command: "sh -c 'ls -1 /tmp/ansible_examples/*.db'"
       register: result
 
 - hosts: test_01

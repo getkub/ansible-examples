@@ -3,7 +3,7 @@
   gather_facts: false
   tasks:
     - replace:
-        path: /scratch/tmp/fstab
+        path: /tmp/ansible_examples/fstab
         regexp: "{{ item.regexp }}"
         replace: "{{ item.replace }}"
       loop:

@@ -1,7 +1,7 @@
 - hosts: localhost
   gather_facts: false
   tasks:
-    - script: /scratch/tmp/my_script
+    - script: /tmp/ansible_examples/my_script
       register: result
     - debug:
         var: result

@@ -1,8 +1,8 @@
 - hosts: test_01
   gather_facts: false
   vars:
-    my_file1: /scratch/tmp/test1
-    my_file2: /scratch/tmp/test2
+    my_file1: /tmp/ansible_examples/test1
+    my_file2: /tmp/ansible_examples/test2
   tasks:
     - debug:
         msg: File {{ my_file1 }} exists
@@ -18,7 +18,7 @@
       when: my_file2 is not exists
 
 # ok: [test_01] => 
-#   msg: File /scratch/tmp/test1 exists
+#   msg: File /tmp/ansible_examples/test1 exists
 # 
 # ok: [test_01] => 
-#   msg: File /scratch/tmp/test2 does not exist
+#   msg: File /tmp/ansible_examples/test2 does not exist

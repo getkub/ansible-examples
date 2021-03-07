@@ -5,11 +5,11 @@
 
     - template:
         src: main2.j2
-        dest: /scratch/tmp/test
+        dest: /tmp/ansible_examples/test
 
     - blockinfile:
         marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item }}"
-        path: /scratch/tmp/test
+        path: /tmp/ansible_examples/test
         block: "{{ lookup('template', item) }}"
       loop:
         - test.conf.j2

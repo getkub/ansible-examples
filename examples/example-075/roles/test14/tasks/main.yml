@@ -3,4 +3,4 @@
 
 - template:
     src: 'DIR1/PATH1/file1'
-    dest: '/scratch/tmp/test14'
+    dest: '/tmp/ansible_examples/test14'

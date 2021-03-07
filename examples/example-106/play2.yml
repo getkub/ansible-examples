@@ -5,7 +5,7 @@
   tasks:
     - debug:
         msg: "/app/homedir/{{ item|basename|regex_replace(regex, replace) }}"
-      loop: "{{ lookup('fileglob', '/scratch/tmp/*.' ~ env, wantlist=True) }}"
+      loop: "{{ lookup('fileglob', '/tmp/ansible_examples/*.' ~ env, wantlist=True) }}"
       vars:
         regex: "{{ '^(.*)\\.' ~ env ~ '$' }}"
         replace: "{{ '\\1' }}"
@@ -15,12 +15,12 @@
 #
 # It's possible to use regex_replace filter to remove the extension.
 # 
-# ok: [localhost] => (item=/scratch/tmp/test2.db) => {
+# ok: [localhost] => (item=/tmp/ansible_examples/test2.db) => {
 #     "msg": "/app/homedir/test2"
 # }
-# ok: [localhost] => (item=/scratch/tmp/test1.db) => {
+# ok: [localhost] => (item=/tmp/ansible_examples/test1.db) => {
 #     "msg": "/app/homedir/test1"
 # }
-# ok: [localhost] => (item=/scratch/tmp/test3.db) => {
+# ok: [localhost] => (item=/tmp/ansible_examples/test3.db) => {
 #     "msg": "/app/homedir/test3"
 # }

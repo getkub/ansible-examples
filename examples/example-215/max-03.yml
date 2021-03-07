@@ -5,7 +5,7 @@
 
     - find:
         recurse: true
-        path: /scratch/tmp/some
+        path: /tmp/ansible_examples/some
       register: result
 
     - set_fact:

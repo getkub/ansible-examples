@@ -1,1 +1,1 @@
-- debug: msg="Task included from /scratch/tmp/debug.yml"
+- debug: msg="Task included from /tmp/ansible_examples/debug.yml"

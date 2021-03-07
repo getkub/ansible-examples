@@ -2,7 +2,7 @@
   gather_facts: false
   tasks:
     - replace:
-        path: '/scratch/tmp/test12'
+        path: '/tmp/ansible_examples/test12'
         regexp: '^/root/(.*) 0+$'
         replace: '/root/\1 1'
 
@@ -16,6 +16,6 @@
 #     regexp: '^/root/(.*) 0+$'
 #     replace: '/root/\1 1'
 # 
-# $ cat /scratch/tmp/test12
+# $ cat /tmp/ansible_examples/test12
 # /root/bar/foo /                           defaults        1 1
 # /foo/bar/foo /                            defaults        1 0

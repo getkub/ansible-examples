@@ -28,7 +28,7 @@
 # 
 #       - name: 'Get data'
 #         set_fact:
-#           my_var: "{{ lookup('pipe', '/scratch/tmp/my_script')|from_yaml }}"
+#           my_var: "{{ lookup('pipe', '/tmp/ansible_examples/my_script')|from_yaml }}"
 #         when: my_continue
 #       - name: 'Set continue=false when data OK'
 #         set_fact:
@@ -50,8 +50,8 @@
 #     only once.
 # 
 #     tasks:
-#       - shell: "echo {{ lookup('pipe', '/scratch/tmp/my_script') }}"
-#     # - shell: "/scratch/tmp/my_script"
+#       - shell: "echo {{ lookup('pipe', '/tmp/ansible_examples/my_script') }}"
+#     # - shell: "/tmp/ansible_examples/my_script"
 #         ignore_errors: true
 #         register: result
 #         until: result.stdout == 'DUMMY'
@@ -60,8 +60,8 @@
 # 
 #     $ cat my_script
 #     #!/bin/sh
-#     my_data=/scratch/tmp/my_data
-#     my_log=/scratch/tmp/my_script.log
+#     my_data=/tmp/ansible_examples/my_data
+#     my_log=/tmp/ansible_examples/my_script.log
 #     if [ -e ${my_data} ]; then
 #            cat ${my_data}
 #     fi

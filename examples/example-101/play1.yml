@@ -2,9 +2,9 @@
   gather_facts: no
   become: yes
   vars:
-    my_dir1: "/scratch/tmp/G1\\$"
-    my_dir2: '/scratch/tmp/G2\$'
-    # my_dir3: "/scratch/tmp/G3\$"  # found unknown escape character
+    my_dir1: "/tmp/ansible_examples/G1\\$"
+    my_dir2: '/tmp/ansible_examples/G2\$'
+    # my_dir3: "/tmp/ansible_examples/G3\$"  # found unknown escape character
   tasks:
     - file:
         state: directory
@@ -13,7 +13,7 @@
         - "{{ my_dir1 }}"
         - "{{ my_dir2 }}"
 
-# > ls -1 /scratch/tmp/
+# > ls -1 /tmp/ansible_examples/
 # 'G1\$'
 # 'G2\$'
 

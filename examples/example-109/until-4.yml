@@ -2,7 +2,7 @@
   gather_facts: no
 
 #  vars:
-#    log_cmd: "printf '{{ prov_ret|default({'0': 'none'}) }}' >> /scratch/tmp/test.log"
+#    log_cmd: "printf '{{ prov_ret|default({'0': 'none'}) }}' >> /tmp/ansible_examples/test.log"
 
   tasks:
 
@@ -13,9 +13,9 @@
 
 #    - name: Provision
 #      vars:
-#        log_cmd: "printf '{{ prov_ret|default({'0': 'none'}) }}' >> /scratch/tmp/test.log"
+#        log_cmd: "printf '{{ prov_ret|default({'0': 'none'}) }}' >> /tmp/ansible_examples/test.log"
 #        try_cmd: "{{ lookup('pipe', log_cmd) }}"
-#      command: /scratch/tmp/provision_cmd
+#      command: /tmp/ansible_examples/provision_cmd
 #      register: prov_ret
 #      until: prov_ret is succeeded
 #      retries: 3
@@ -26,7 +26,7 @@
 
     - block:
         - name: Provision
-          command: /scratch/tmp/provision_cmd
+          command: /tmp/ansible_examples/provision_cmd
           register: prov_ret
           until: prov_ret is succeeded
           retries: 3
@@ -37,7 +37,7 @@
             var: prov_ret
         - name: Read the log
           slurp:
-            src: /scratch/tmp/provision_cmd.log
+            src: /tmp/ansible_examples/provision_cmd.log
           register: provision_cmd_log
         - name: Display log
           debug:

@@ -2,7 +2,7 @@
   gather_facts: no
   tasks:
     - blockinfile:
-       path: /scratch/tmp/test
+       path: /tmp/ansible_examples/test
        insertafter: "^\\s*with_items:(.*)$"
        # marker: ""
        block: |3

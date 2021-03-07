@@ -2,13 +2,13 @@
   gather_facts: no
   tasks:
     - stat:
-        path: /scratch/tmp/test
+        path: /tmp/ansible_examples/test
       register: result
     - debug:
         msg: File exists
       when: result.stat.exists
     - stat:
-        path: /scratch/tmp/testX
+        path: /tmp/ansible_examples/testX
       register: result
     - debug:
         msg: File does not exist

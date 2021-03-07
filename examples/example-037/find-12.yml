@@ -2,7 +2,7 @@
 
   vars:
 
-    al_find_newer_dir: /scratch/tmp/zones
+    al_find_newer_dir: /tmp/ansible_examples/zones
     al_find_newer_time: mtime
 
   tasks:

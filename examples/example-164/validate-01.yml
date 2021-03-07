@@ -17,11 +17,11 @@
       
 # $ cat my_validate.sh
 # #!/bin/sh
-# echo key: $1 >> /scratch/tmp/validate1.log
-# echo val: $2 >> /scratch/tmp/validate1.log
-# echo --------- >> /scratch/tmp/validate1.log
-# cat $3 >> /scratch/tmp/validate1.log
-# echo --------- >> /scratch/tmp/validate1.log
+# echo key: $1 >> /tmp/ansible_examples/validate1.log
+# echo val: $2 >> /tmp/ansible_examples/validate1.log
+# echo --------- >> /tmp/ansible_examples/validate1.log
+# cat $3 >> /tmp/ansible_examples/validate1.log
+# echo --------- >> /tmp/ansible_examples/validate1.log
 
 # $ cat validate1.log 
 # key: key1

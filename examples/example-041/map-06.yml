@@ -30,7 +30,7 @@
                   list|
                   join('\n') }}"
         insertafter: EOF
-        dest: /scratch/tmp/playbookXX.logs
+        dest: /tmp/ansible_examples/playbookXX.logs
       vars:
         regex: '^(.*)$'
         replace: '{{ inventory_hostname }} - \1'
@@ -39,7 +39,7 @@
 # Ansible - Lineinfile add string before each line
 # https://stackoverflow.com/questions/59465001/ansible-lineinfile-add-string-before-each-line/
 
-# $ cat /scratch/tmp/playbookXX.logs 
+# $ cat /tmp/ansible_examples/playbookXX.logs 
 # test_01 - some content from hostname1 message_errors.stdout
 # test_01 - some content from hostname1 message_errors.stdout
 

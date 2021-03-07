@@ -3,10 +3,10 @@
 
     - shell: env > enc.command
       args:
-        chdir: /scratch/tmp/testFolder/
+        chdir: /tmp/ansible_examples/testFolder/
       tags: t1
 
-# shell> cat /scratch/tmp/testFolder/enc.command
+# shell> cat /tmp/ansible_examples/testFolder/enc.command
 # LESS_TERMCAP_se=
 # LESS_TERMCAP_ZW=
 # LESSOPEN=| /usr/bin/lesspipe %s
@@ -14,10 +14,10 @@
 
     - command: sh -c "env > enc.sh"
       args:
-        chdir: /scratch/tmp/testFolder/
+        chdir: /tmp/ansible_examples/testFolder/
       tags: t2
 
-# shell> cat /scratch/tmp/testFolder/enc.sh
+# shell> cat /tmp/ansible_examples/testFolder/enc.sh
 # LESS_TERMCAP_se=
 # LESS_TERMCAP_ZW=
 # LESSOPEN=| /usr/bin/lesspipe %s
@@ -25,10 +25,10 @@
 
     - shell: jar -cf test.war *
       args:
-        chdir: /scratch/tmp/testFolder/
+        chdir: /tmp/ansible_examples/testFolder/
       tags: t3
 
     - shell: ls -1 *
       args:
-        chdir: /scratch/tmp/testFolder/
+        chdir: /tmp/ansible_examples/testFolder/
       tags: t4

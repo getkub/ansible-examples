@@ -2,7 +2,7 @@
   connection: local
   tasks:
     - xml:
-        path: /scratch/tmp/foo.xml
+        path: /tmp/ansible_examples/foo.xml
         xpath: /results/ComputerSystem
       register: result
     - debug:

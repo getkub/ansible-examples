@@ -12,7 +12,7 @@
   tasks:
     - template:
         src: test-03.j2
-        dest: /scratch/tmp/test-03.txt
+        dest: /tmp/ansible_examples/test-03.txt
 
 # Trouble passing Ansible dictionary to template
 # https://stackoverflow.com/questions/58963207/trouble-passing-ansible-list-to-template/

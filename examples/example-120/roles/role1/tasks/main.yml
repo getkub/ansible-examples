@@ -1,6 +1,6 @@
 - copy:
     src: "{{ lookup('first_found', findme) }}"
-    dest: /scratch/tmp/
+    dest: /tmp/ansible_examples/
     owner: root
     mode: 0644
   vars:

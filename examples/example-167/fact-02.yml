@@ -5,8 +5,8 @@
     my_delay: 3
   tasks:
 
-#    - shell: "echo {{ lookup('pipe', '/scratch/tmp/my_script') }}"
-    - shell: "/scratch/tmp/my_script"
+#    - shell: "echo {{ lookup('pipe', '/tmp/ansible_examples/my_script') }}"
+    - shell: "/tmp/ansible_examples/my_script"
       ignore_errors: true
       register: result
       until: result.stdout|from_yaml is mapping

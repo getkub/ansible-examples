@@ -19,7 +19,7 @@
 
     - template:
         src: test5.j2
-        dest: /scratch/tmp/test
+        dest: /tmp/ansible_examples/test
 
 # Jinja2 - If condition & nested array
 # https://stackoverflow.com/questions/57449620/jinja2-if-condition-nested-array/

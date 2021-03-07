@@ -15,7 +15,7 @@
         var: result.stdout
     - name: read the file
       debug:
-        msg: "{{ lookup('file', '/scratch/tmp/test') }}"
+        msg: "{{ lookup('file', '/tmp/ansible_examples/test') }}"
 
 # Ansible chown operation not permitted as non-root user
 # https://stackoverflow.com/questions/56693857/ansible-chown-operation-not-permitted-as-non-root-user

@@ -2,7 +2,7 @@
   gather_facts: false
   tasks:
     - replace:
-        path: '/scratch/tmp/test4'
+        path: '/tmp/ansible_examples/test4'
         regexp: '{{ regex }}'
         replace: '{{ replace }}'
       vars:

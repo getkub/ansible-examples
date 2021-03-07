@@ -11,7 +11,7 @@
         msg: "{{ create.json.info.0.value }}"
     - template:
         src: test.j2
-        dest: /scratch/tmp/test
+        dest: /tmp/ansible_examples/test
 
 # How to read ansible debug output as a variable in Json file .. example below
 # https://serverfault.com/questions/964338/how-to-read-ansible-debug-output-as-a-variable-in-json-file-example-below

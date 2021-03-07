@@ -5,19 +5,19 @@
 
     - name: "my_dir:oa-version.0.99-3256"
       set_fact:
-        my_dir: "{{ lookup('pipe', 'tar tvf /scratch/tmp/test.tar.gz').splitlines().0.split(' ')[-1][:-1] }}"
+        my_dir: "{{ lookup('pipe', 'tar tvf /tmp/ansible_examples/test.tar.gz').splitlines().0.split(' ')[-1][:-1] }}"
     - debug:
         var: my_dir
 
     - name: "my_version:3256"
       set_fact:
-        my_version: "{{ lookup('pipe', 'tar tvf /scratch/tmp/test.tar.gz').splitlines().0.split(' ')[-1].split('-')[-1][:-1] }}"
+        my_version: "{{ lookup('pipe', 'tar tvf /tmp/ansible_examples/test.tar.gz').splitlines().0.split(' ')[-1].split('-')[-1][:-1] }}"
     - debug:
         var: my_version
         
     - name: "result.files.0[:-1]:oa-version.0.99-3256"
       unarchive:
-        src: /scratch/tmp/test.tar.gz
+        src: /tmp/ansible_examples/test.tar.gz
         dest: /scratch/tmp
         remote_src: yes
         list_files: yes

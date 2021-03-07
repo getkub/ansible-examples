@@ -21,7 +21,7 @@
 
     - template:
         src: template1.j2
-        dest: /scratch/tmp/test1
+        dest: /tmp/ansible_examples/test1
 
 # Using ansible to shuffle list of dns servers
 # https://stackoverflow.com/questions/59258329/using-ansible-to-shuffle-list-of-dns-servers
@@ -35,6 +35,6 @@
 #         {%- endif -%}
 #       {%- endfor -%};
 # 
-# $ cat /scratch/tmp/test1
+# $ cat /tmp/ansible_examples/test1
 # supersede domain-name-servers
 #       10.1.0.59, 10.1.0.56, 10.1.0.53, 10.1.0.51;

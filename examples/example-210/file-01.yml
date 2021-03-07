@@ -5,7 +5,7 @@
 
     - debug:
         var: item
-      loop: "{{ lookup('file', '/scratch/tmp/default.properties').splitlines() }}"
+      loop: "{{ lookup('file', '/tmp/ansible_examples/default.properties').splitlines() }}"
       when: import_consul|default(false)|bool
 
 # Ansible Conditional lookup
@@ -16,7 +16,7 @@
 #
 #    The offending line appears to be:
 #         var: item
-#       loop: loop: "{{ lookup('file', '/scratch/tmp/*.properties').splitlines() }}"
+#       loop: loop: "{{ lookup('file', '/tmp/ansible_examples/*.properties').splitlines() }}"
 # 
 # A: The when condition must be evaluated in each iteration because the
 #    condition might depend on the item. As a result, the loop must be

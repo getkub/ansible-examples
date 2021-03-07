@@ -11,4 +11,4 @@
   tasks:
     - template:
         src: test-02.j2
-        dest: /scratch/tmp/test-02.txt
+        dest: /tmp/ansible_examples/test-02.txt

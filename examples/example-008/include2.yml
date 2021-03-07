@@ -3,7 +3,7 @@
 - hosts: localhost
   gather_facts: no
   tasks:
-    - include_tasks: /scratch/tmp/debug2.yml
+    - include_tasks: /tmp/ansible_examples/debug2.yml
 
 # EOF
 ...

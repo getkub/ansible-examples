@@ -49,7 +49,7 @@
 # $ cat roles/test14/tasks/main.yml 
 # - template:
 #     src: 'DIR1/PATH1/file1'
-#     dest: '/scratch/tmp/test14'
+#     dest: '/tmp/ansible_examples/test14'
 # 
 # $ cat roles/test14/templates/DIR1/PATH1/file1 
 # {{ inventory_hostname }}
@@ -63,5 +63,5 @@
 # 
 # PLAY RECAP localhost: ok=2 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0
 # 
-# $ cat /scratch/tmp/test14 
+# $ cat /tmp/ansible_examples/test14 
 # localhost

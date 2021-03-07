@@ -6,7 +6,7 @@
     quote: "'"
   tasks:
     - replace:
-        path: "/scratch/tmp/test"
+        path: "/tmp/ansible_examples/test"
         regexp: '^my_var = ""(.*)$'
         replace: '{{ "my_var = " ~
                      lbrackets ~ "getv " ~ quote ~
@@ -16,5 +16,5 @@
 # Ansible/Jinja2 nested escaping
 # https://stackoverflow.com/questions/58481609/ansible-jinja2-nested-escaping/
 
-# $ cat /scratch/tmp/test
+# $ cat /tmp/ansible_examples/test
 # my_var = {{getv '/staging/my_dir/my_file'}}

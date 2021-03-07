@@ -2,7 +2,7 @@
   gather_facts: no
   tasks:
   - find:
-      paths: "/scratch/tmp/path/to/{{ item }}"
+      paths: "/tmp/ansible_examples/path/to/{{ item }}"
       file_type: directory
       recurse: yes
     register: list

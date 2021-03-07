@@ -6,5 +6,5 @@
         my_hosts: "{{ groups['test_jails'] }}"
     - template:
         src: test7.j2
-        dest: /scratch/tmp/test
+        dest: /tmp/ansible_examples/test
       run_once: true

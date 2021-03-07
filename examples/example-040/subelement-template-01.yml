@@ -8,7 +8,7 @@
   tasks:
     - template:
         src: template-01.j2
-        dest: /scratch/tmp/test.txt
+        dest: /tmp/ansible_examples/test.txt
 
 # Jinja2 nested loop template for processing Ansible YAML variables from two lists
 # https://stackoverflow.com/questions/59152709/jinja2-nested-loop-template-for-processing-ansible-yaml-variables-from-two-lists
