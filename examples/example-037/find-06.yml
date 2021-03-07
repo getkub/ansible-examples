@@ -3,7 +3,7 @@
   - name: Find patterns
     find:
       paths:
-        - /scratch/tmp
+        - /tmp/ansible_examples
       patterns:
         - "INST*"
     register: info

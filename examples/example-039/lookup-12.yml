@@ -5,7 +5,7 @@
     myString: vlado
   tasks:
     - find:
-        paths: /scratch/tmp
+        paths: /tmp/ansible_examples
         patterns: "*.db"
       register: files_matched
 

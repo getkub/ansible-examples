@@ -18,7 +18,7 @@
     - name: "result.files.0[:-1]:oa-version.0.99-3256"
       unarchive:
         src: /tmp/ansible_examples/test.tar.gz
-        dest: /scratch/tmp
+        dest: /tmp/ansible_examples
         remote_src: yes
         list_files: yes
       register: result

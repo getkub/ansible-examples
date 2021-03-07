@@ -6,7 +6,7 @@
     Mellanox_1: enp3s0
     Mellanox_2: enp5s0
     lp_debug: true
-    lp_netplan_root: "/scratch/tmp"
+    lp_netplan_root: "/tmp/ansible_examples"
     lp_netplan: True
     lp_netplan_conf:
       - file: "91-ethernet.yaml"

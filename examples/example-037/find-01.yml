@@ -9,7 +9,7 @@
   - name: Find patterns
 
     find:
-      paths: /scratch/tmp
+      paths: /tmp/ansible_examples
       patterns: '{{ my_pattern }}'
     register: find_results
 

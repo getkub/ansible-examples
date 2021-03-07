@@ -3,7 +3,7 @@
   - name: Find patterns
     find:
       paths:
-        - /scratch/tmp
+        - /tmp/ansible_examples
       patterns: "*.db"
       recurse: yes
     register: files_matched

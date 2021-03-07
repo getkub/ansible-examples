@@ -1,7 +1,7 @@
 - hosts: localhost
   tasks:
   - find:
-      paths: /scratch/tmp
+      paths: /tmp/ansible_examples
       patterns: "*.test"
     register: result
 

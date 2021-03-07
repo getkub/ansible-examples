@@ -2,7 +2,7 @@
   tasks:
   - name: Find patterns
     find:
-      paths: /scratch/tmp
+      paths: /tmp/ansible_examples
       patterns: '[j]{2}.[j]{2}'
       use_regex: yes
     register: find_results

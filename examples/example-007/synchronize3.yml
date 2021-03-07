@@ -3,5 +3,5 @@
   tasks:
     - synchronize:
         src: /scratch/test-file
-        dest: /scratch/tmp
+        dest: /tmp/ansible_examples
 #     delegate_to: test_02

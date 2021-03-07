@@ -5,6 +5,6 @@
     - synchronize:
         mode: pull
         src: /tmp/ansible_examples/ansible-test-file
-        dest: /scratch/tmp
+        dest: /tmp/ansible_examples
 
 # EOF

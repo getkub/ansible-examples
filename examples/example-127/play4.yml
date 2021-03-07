@@ -1,7 +1,7 @@
 - hosts: localhost
   tasks:
     - stat:
-        path: /scratch/tmp
+        path: /tmp/ansible_examples
       register: info
     - debug:
         var: info
@@ -9,7 +9,7 @@
         var: info.stat.exists
 
     - stat:
-        path: /scratch/tmp2
+        path: /tmp/ansible_examples2
       register: info2
     - debug:
         var: info2

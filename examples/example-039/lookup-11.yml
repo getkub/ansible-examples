@@ -6,7 +6,7 @@
     myString_list: []
   tasks:
     - find:
-        paths: /scratch/tmp
+        paths: /tmp/ansible_examples
         patterns: "*.db"
       register: files_matched
       tags: always

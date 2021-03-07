@@ -1,6 +1,6 @@
 - hosts: localhost
   vars:
-    test_path: /scratch/tmp
+    test_path: /tmp/ansible_examples
   tasks:
     - lineinfile:
         path: '{{ test_path }}/validate1.txt'
