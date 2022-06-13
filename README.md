@@ -164,7 +164,7 @@ Various examples of Ansbile code.
 - Example 160. defined
 - Example 161. Test registered result
 - Example 162. join
-- Example 163. Python
+- Example 163. Execute ansible-playbook via Python subprocess.run
 - Example 164. validate
 - Example 165. ansible_facts
 - Example 166. serial
@@ -250,7 +250,7 @@ Various examples of Ansbile code.
 - Example 246. Concatenate strings
 - Example 247. Managing lists
 - Example 248. Python
-- Example 249. mount
+- Example 249. ansible_mounts
 - Example 250. callback log_plays
 - Example 251. parse output
 - Example 252. ansible_interfaces
@@ -269,6 +269,25 @@ Various examples of Ansbile code.
 - Example 265. Jinja tests
 - Example 266. Role defaults
 - Example 267. json_query issue to_yaml|from_yaml
+- Example 268. batch filter
+- Example 269. variable in tags
+- Example 270. al_bsd_service_facts (vbotka.ansible_lib)
+- Example 271. inventory_hostnames
+- Example 272. truthy, falsy
+- Example 273. get_url
+- Example 274. cli_parse
+- Example 275. throttle
+- Example 276. Development of a module (community.general.ucl)
+- Example 277. lineinfile can't modify a line using backrefs or add the line if missing
+- Example 278. ansible_managed
+- Example 279. Development of a module (supports_check_mode and changed)
+- Example 280. ansible.utils.to_paths – Flatten object into a dictionary of paths and values
+- Example 281. community.general.dict_kv
+- Example 282. community.general.groupby_as_dict
+- Example 283. community.general.version_sort
+- Example 284. community.general.jc
+- Example 285. community.general.path_join
+- Example 286. community.general.lists_mergeby
 
 ## License
 
@@ -277,4 +296,4 @@ Various examples of Ansbile code.
 
 ## Author Information
 
-[Vladimir Botka](https://botka.link)
+[Vladimir Botka](https://botka.info)
